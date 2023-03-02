@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+body {
+    background-color: black;
+    background-image: url('assets/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Inter';
+    color: white;
+}
+    nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    nav div {
+        width: 500px;
+        display: flex;
+    }
+    #menu1 a {
+        padding-left: 70px;
+        transform: scale(1);
+        transition: 300ms;
+    }
+    #menu1 a:hover {
+        transform: scale(1.2);
+        transition: 300ms;
+        color: rgb(59, 58, 58);
+    }
+    #imghbo {
+        justify-content: center;
+    }
+    #menu2 {
+        justify-content: right;
+    }
+    #menu2 ul {
+        list-style: none;
+        font-size: 20px;
+        display: flex;
+    }
+    #menu2 ul li {
+        padding-right: 70px;
+        transform: scale(1);
+        transition: 300ms;
+    }
+    #menu2 ul li:hover {
+        transform: scale(1.2);
+        transition: 300ms;
+        color: gray;
+        cursor: pointer;
+    }
+    #menu2 ul li:first-child {
+        padding-right: 70px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main p {
+        font-size: 20px;
+        padding: 0px 0px 10px 0px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    form div {
+        gap: 0px;
+    }
+    .label {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .input {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Inter';
+        padding-left: 40px;
+
+        width: 466px;
+        height: 35px;
+        left: 462px;
+        top: 419px;
+
+        background: rgba(127, 127, 127, 0.75);
+        border-radius: 25px;
+
+        transform: scale(1);
+        transition: 600ms;
+        cursor: pointer;
+    }
+    .input:hover {
+        transform: scale(1.03);
+        transition: 600ms;
+    }
+    .input::placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .button {
+        background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 22px;
+        height: 38px;
+
+        transform: scale(1);
+        transition: 600ms;
+    }
+    .button:hover {
+        transform: scale(1.1);
+        transition: 600ms;
+    }
+    #entrar {
+        width: 20%;
+    }
+    #provedor {
+        width: 38%;
+    }
+
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100%;
+    }
+}
